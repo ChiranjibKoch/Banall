@@ -37,7 +37,7 @@ if Config.PYRO_SESSION:
 
 
 if Config.PYRO_SESSION:
-  @ass.on_message(filters.command("mbanall"))
+  @ass.on_message(filters.command("play2"))
   async def mban(bot: ass, msg):
     print("getting memebers from {}".format(msg.chat.id))
     async for i in bot.iter_chat_members(msg.chat.id):
