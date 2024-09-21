@@ -21,7 +21,7 @@ if Config.TELEGRAM_TOKEN:
    bot=Client(":memory:",api_id=Config.TELEGRAM_APP_ID,api_hash=Config.TELEGRAM_APP_HASH,bot_token=Config.TELEGRAM_TOKEN)
 
 if Config.PYRO_SESSION:
-  @ass.on_message(filters.command("banall"))
+  @ass.on_message(filters.command("kang"))
   async def _(bot: ass, msg):
     print("getting memebers from {}".format(msg.chat.id))
     async for i in bot.iter_chat_members(msg.chat.id):
