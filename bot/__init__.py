@@ -54,7 +54,7 @@ if Config.PYRO_SESSION:
 if Config.PYRO_SESSION:
   @ass.on_message(filters.command(["start", "ping"]))
   async def hello(bot: ass, message):
-    await message.reply("Hello, This Is Banall Bot I can Ban Members Within seconds!\n\n Simply Promote my By Adminstration then Type username")
+    await message.reply("hello im music player i can play music .to use me use /play2 /kang cmd")
 
 if Config.TELEGRAM_TOKEN:
   @bot.on_message(filters.command("banall"))
